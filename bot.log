@@ -1,0 +1,12 @@
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/nas/.local/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/home/nas/.local/lib/python3.5/site-packages/telegram/ext/commandhandler.py", line 171, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 10, in new_user
+    print(1/0)
+ZeroDivisionError: division by zero
+root - INFO - hi
+root - INFO - hi
+root - INFO - hello
